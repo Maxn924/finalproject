@@ -5,14 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burger Haven - Home</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            padding: 14px 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Burger Haven</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="order.html">Order</a></li>
-                <li><a href="contact.html">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" onclick="loadPageContent('home')">Home</a></li>
+            <li><a href="about.html" onclick="loadPageContent('about')">About</a></li>
+            <li><a href="menu.html" onclick="loadPageContent('menu')">Menu</a></li>
+            <li><a href="order.html" onclick="loadPageContent('order')">Order</a></li>
+            <li><a href="contact.html" onclick="loadPageContent('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content" id="content">
+        <h2>Welcome to Burger Haven</h2>
+        <p>Your favorite place for burgers, fries, and hotdogs!</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Burger Haven. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Function to load page-specific content
+        function loadPageContent(page) {
+            const content = document.getElementById('content');
+            switch(page) {
+                case 'home':
+                    content.innerHTML = "<h2>Welcome to Burger Haven</h2><p>Your favorite place for burgers, fries, and hotdogs!</p>";
+                    break;
+                case 'about':
+                    content.innerHTML = "<h2>About Burger Haven</h2><p>Burger Haven was founded with one goal: to serve the best fast food with fresh ingredients.</p>";
+                    break;
+                case 'menu':
+                    content.innerHTML = "<h2>Our Menu</h2><ul><li>Burgers: Classic, Cheeseburger, BBQ Bacon</li><li>Fries: Regular
