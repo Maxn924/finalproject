@@ -23,10 +23,12 @@
         <section id="home">
             <h2>Welcome to Burger Haven</h2>
             <p>Delicious burgers, crispy fries, and savory hotdogs made fresh just for you!</p>
+            <p><a href="about.html">Learn more about us</a></p>
         </section>
         <section id="about">
             <h2>About Us</h2>
             <p>Burger Haven is dedicated to serving high-quality fast food with fresh ingredients and great taste.</p>
+            <p><a href="menu.html">Check out our menu</a></p>
         </section>
         <section id="menu">
             <h2>Our Menu</h2>
@@ -36,6 +38,7 @@
                 <li>Hotdogs</li>
                 <li>Drinks</li>
             </ul>
+            <p><a href="order.html">Place your order now</a></p>
         </section>
         <section id="order">
             <h2>Order Now</h2>
@@ -51,11 +54,13 @@
                 <input type="number" id="quantity" name="quantity" min="1" value="1">
                 <button type="submit">Order Now</button>
             </form>
+            <p><a href="contact.html">Contact us for inquiries</a></p>
         </section>
         <section id="contact">
             <h2>Contact Us</h2>
             <p>Email: contact@burgerhaven.com</p>
             <p>Phone: (123) 456-7890</p>
+            <p><a href="index.html">Return to Home</a></p>
         </section>
     </main>
     <footer>
